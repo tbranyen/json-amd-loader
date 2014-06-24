@@ -5,6 +5,11 @@ define(function(require, exports) {
   var buildMap = {};
 
   exports.load = function(name, req, load, config) {
+    // If we're in a build, bail out.
+    if (config.isBuild) {
+      return load();
+    }
+
     var xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function() {
