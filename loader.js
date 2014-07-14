@@ -39,8 +39,6 @@ define(function(require, exports) {
         contents = String(fs.readFileSync(url));
       }
 
-			console.log(url, contents);
-
       // Read in the file synchronously, as RequireJS expects, and return the
       // contents.  Process as a Lo-Dash template.
       buildMap[name] = contents;

@@ -1,0 +1,5 @@
+{
+  "name": "json-amd-loader",
+  "version": "0.1.0",
+  "main": "loader.js"
+}
